@@ -56,6 +56,11 @@
      <Compile Include="Assets\Scripts\HalfTrigger.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Scripts\WaypointTrackerAI.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <None Include="Assets\Trees_WorldSpace_FREE\WorldSpaceTrees_Doc.txt" />
      <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
@@ -619,6 +624,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{cfed0b5b-4e9f-29c3-10f2-e79d6bc8fb9c}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

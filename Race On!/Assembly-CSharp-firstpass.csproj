@@ -41,7 +41,10 @@
      <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
      <Compile Include="Assets\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
@@ -50,8 +53,10 @@
      <Compile Include="Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
      <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
      <Compile Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
      <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
@@ -82,6 +87,9 @@
      <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
      <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
      <Compile Include="Assets\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
      <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
@@ -101,7 +109,9 @@
      <Compile Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
      <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
      <Compile Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
      <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
+     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
      <Compile Include="Assets\Standard Assets\Utility\LerpControlledBob.cs" />
      <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
      <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
@@ -121,7 +131,6 @@
      <Compile Include="Assets\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
-     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
