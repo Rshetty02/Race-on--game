@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
 #pragma warning disable 649
@@ -8,6 +10,8 @@ namespace UnityStandardAssets.Vehicles.Car
     [RequireComponent(typeof (CarController))]
     public class CarAIControl : MonoBehaviour
     {
+
+        public int Countdownflag  = 0;
         public enum BrakeCondition
         {
             NeverBrake,                 // the car simply accelerates at full throttle all the time.
@@ -61,6 +65,16 @@ namespace UnityStandardAssets.Vehicles.Car
 
         private void FixedUpdate()
         {
+             StartCoroutine( NextScene() );
+        }
+
+        IEnumerator NextScene(){
+            
+            if(Countdownflag == 0){
+                yield return new WaitForSeconds(3.5f);
+                Countdownflag =1;
+            }
+            
             if (m_Target == null || !m_Driving)
             {
                 // Car should not be moving,

@@ -46,6 +46,7 @@ public class Countdown : MonoBehaviour
         GoAudio.SetActive(true);
         CarControls.GetComponent<PlayerMovement>().enabled = true;
         
+        
 
     }
 }
