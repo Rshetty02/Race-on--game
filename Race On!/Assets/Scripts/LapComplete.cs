@@ -32,6 +32,11 @@ public class LapComplete : MonoBehaviour
             minuteObject.GetComponent<Text>().text = "" + LapTimeManager.MinuteCount + ":";
         }
 
+        PlayerPrefs.SetInt("MinSave",LapTimeManager.MinuteCount);
+        PlayerPrefs.SetInt("SecSave",LapTimeManager.SecondCount);
+        PlayerPrefs.SetFloat("MilliSave",LapTimeManager.MilliCount);
+
+
         LapTimeManager.MilliCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MinuteCount = 0;
