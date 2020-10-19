@@ -7,14 +7,16 @@ public class LapComplete : MonoBehaviour
     
     public GameObject milliObject;
 
+    
     public GameObject secondObject;
 
     public GameObject minuteObject;
-
+    public float RawTime;
 
     public void OnTriggerEnter() {
 
-        
+        RawTime = PlayerPrefs.GetFloat("RawTime");
+        if(LapTimeManager.RawTime<=RawTime){
         milliObject.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
         
 
@@ -31,12 +33,13 @@ public class LapComplete : MonoBehaviour
         else{
             minuteObject.GetComponent<Text>().text = "" + LapTimeManager.MinuteCount + ":";
         }
-
+        }
         PlayerPrefs.SetInt("MinSave",LapTimeManager.MinuteCount);
         PlayerPrefs.SetInt("SecSave",LapTimeManager.SecondCount);
         PlayerPrefs.SetFloat("MilliSave",LapTimeManager.MilliCount);
+        PlayerPrefs.SetFloat("RawTime",LapTimeManager.RawTime);
 
-
+        LapTimeManager.RawTime = 0;
         LapTimeManager.MilliCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MinuteCount = 0;
