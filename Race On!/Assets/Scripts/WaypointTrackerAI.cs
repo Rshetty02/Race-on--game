@@ -13,6 +13,15 @@ public class WaypointTrackerAI : MonoBehaviour
     public GameObject mark06;
     public GameObject mark07;
 
+    public GameObject mark08;
+
+    public GameObject mark09;
+
+    public GameObject mark10;
+    public GameObject mark11;
+    public GameObject mark12;
+    public GameObject mark13;
+
     public int MarkTracker;
 
     // Update is called once per frame
@@ -43,7 +52,25 @@ public class WaypointTrackerAI : MonoBehaviour
         }
 
         if(MarkTracker==6){
-            TheMarker.transform.position = mark06.transform.position;
+            TheMarker.transform.position = mark07.transform.position;
+        }
+        if(MarkTracker==7){
+            TheMarker.transform.position = mark08.transform.position;
+        }
+        if(MarkTracker==8){
+            TheMarker.transform.position = mark09.transform.position;
+        }
+        if(MarkTracker==9){
+            TheMarker.transform.position = mark10.transform.position;
+        }
+        if(MarkTracker==10){
+            TheMarker.transform.position = mark11.transform.position;
+        }
+        if(MarkTracker==11){
+            TheMarker.transform.position = mark12.transform.position;
+        }
+        if(MarkTracker==12){
+            TheMarker.transform.position = mark13.transform.position;
         }
 
     }
@@ -52,7 +79,7 @@ public class WaypointTrackerAI : MonoBehaviour
         if(other.gameObject.tag=="AICAR1"){
             this.GetComponent<BoxCollider>().enabled= false;
             MarkTracker +=1;
-            if(MarkTracker>=6){
+            if(MarkTracker>=12){
                 MarkTracker = 0;
             }
         }
