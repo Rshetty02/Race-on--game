@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/trackselect.unity
     guid: 54f0f918cbc907e40ae3f5ba0635002d
+  - enabled: 1
+    path: Assets/End Credits.unity
+    guid: ac076856631fea646b3e53d0f1f882e8
   m_configObjects: {}
