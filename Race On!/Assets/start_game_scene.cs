@@ -7,7 +7,7 @@ public class start_game_scene : MonoBehaviour
 {
     // Start game
     public void startgame(){
-        SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level02");
 
     }
 
@@ -23,6 +23,11 @@ public class start_game_scene : MonoBehaviour
 
     public void mountainbackroad(){
         SceneManager.LoadScene("Level02");
+
+    }
+
+    public void credits(){
+        SceneManager.LoadScene("End Credits");
 
     }
 

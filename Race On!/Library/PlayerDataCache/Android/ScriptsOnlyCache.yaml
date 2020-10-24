@@ -30,8 +30,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -76,9 +78,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11274}
     - Class: 114
+      Script: {instanceID: 11276}
+    - Class: 114
+      Script: {instanceID: 11278}
+    - Class: 114
       Script: {instanceID: 11280}
     - Class: 114
       Script: {instanceID: 11284}
+    - Class: 114
+      Script: {instanceID: 12206}
     - Class: 114
       Script: {instanceID: 12324}
     - Class: 114
@@ -92,6 +100,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -177,6 +187,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12104}
     - Class: 114
+      Script: {instanceID: 12206}
+    - Class: 114
       Script: {instanceID: 12236}
     - Class: 114
       Script: {instanceID: 12242}
@@ -205,9 +217,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 14622}
+      Script: {instanceID: 15544}
     - Class: 114
-      Script: {instanceID: 15064}
+      Script: {instanceID: 15988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,7 +279,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -292,58 +310,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13124}
     - Class: 114
-      Script: {instanceID: 17556}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Thank you screen.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11274}
-    - Class: 114
-      Script: {instanceID: 11276}
-    - Class: 114
-      Script: {instanceID: 11278}
-    - Class: 114
-      Script: {instanceID: 11280}
-    - Class: 114
-      Script: {instanceID: 11282}
-    - Class: 114
-      Script: {instanceID: 11284}
-    - Class: 114
-      Script: {instanceID: 12788}
-    - Class: 114
-      Script: {instanceID: 13124}
-    - Class: 114
-      Script: {instanceID: 19272}
+      Script: {instanceID: 23268}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -394,7 +361,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13124}
     - Class: 114
-      Script: {instanceID: 17556}
+      Script: {instanceID: 23268}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1418,7 +1385,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Main Menu.unity
   - Assets/Level02.unity
-  - Assets/Thank you screen.unity
   - Assets/trackselect.unity
   - Assets/End Credits.unity
   playerPath: C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Test01.apk
