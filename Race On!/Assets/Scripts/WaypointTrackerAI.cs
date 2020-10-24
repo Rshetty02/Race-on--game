@@ -206,7 +206,7 @@ public class WaypointTrackerAI : MonoBehaviour
         if(other.gameObject.tag=="AICAR1"){
             this.GetComponent<BoxCollider>().enabled= false;
             MarkTracker +=1;
-            if(MarkTracker>=43){
+            if(MarkTracker>=45){
                 MarkTracker = 0;
             }
         }
