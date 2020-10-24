@@ -42,6 +42,19 @@ public class WaypointTrackerAI : MonoBehaviour
     public GameObject mark29;
     public GameObject mark30;
     public GameObject mark31;
+    public GameObject mark32;
+    public GameObject mark33;
+    public GameObject mark34;
+    public GameObject mark35;
+    public GameObject mark36;
+    public GameObject mark37;
+    public GameObject mark38;
+    public GameObject mark39;
+    public GameObject mark40;
+    public GameObject mark41;
+    public GameObject mark42;
+    public GameObject mark43;
+    public GameObject mark44;
 
     public int MarkTracker;
 
@@ -147,6 +160,45 @@ public class WaypointTrackerAI : MonoBehaviour
         if(MarkTracker==30){
             TheMarker.transform.position = mark31.transform.position;
         }
+        if(MarkTracker==31){
+            TheMarker.transform.position = mark32.transform.position;
+        }
+        if(MarkTracker==32){
+            TheMarker.transform.position = mark33.transform.position;
+        }
+        if(MarkTracker==33){
+            TheMarker.transform.position = mark34.transform.position;
+        }
+        if(MarkTracker==34){
+            TheMarker.transform.position = mark35.transform.position;
+        }
+        if(MarkTracker==35){
+            TheMarker.transform.position = mark36.transform.position;
+        }
+        if(MarkTracker==36){
+            TheMarker.transform.position = mark37.transform.position;
+        }
+        if(MarkTracker==37){
+            TheMarker.transform.position = mark38.transform.position;
+        }
+        if(MarkTracker==38){
+            TheMarker.transform.position = mark39.transform.position;
+        }
+        if(MarkTracker==39){
+            TheMarker.transform.position = mark40.transform.position;
+        }
+        if(MarkTracker==40){
+            TheMarker.transform.position = mark41.transform.position;
+        }
+        if(MarkTracker==41){
+            TheMarker.transform.position = mark42.transform.position;
+        }
+        if(MarkTracker==42){
+            TheMarker.transform.position = mark43.transform.position;
+        }
+        if(MarkTracker==43){
+            TheMarker.transform.position = mark44.transform.position;
+        }
 
     }
 
@@ -154,7 +206,7 @@ public class WaypointTrackerAI : MonoBehaviour
         if(other.gameObject.tag=="AICAR1"){
             this.GetComponent<BoxCollider>().enabled= false;
             MarkTracker +=1;
-            if(MarkTracker>=30){
+            if(MarkTracker>=43){
                 MarkTracker = 0;
             }
         }
