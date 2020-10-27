@@ -71,6 +71,7 @@
      <Compile Include="Assets\start_game_scene.cs" />
      <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
+     <None Include="Assets\NatureStarterKit2\info.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\KajamansRoads\Free\ReadMe.txt" />
     <Reference Include="UnityEngine">
