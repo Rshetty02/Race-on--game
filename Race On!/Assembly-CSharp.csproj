@@ -56,8 +56,10 @@
      <Compile Include="Assets\Scripts\BlueScore.cs" />
      <Compile Include="Assets\Scripts\CameraAngle.cs" />
      <Compile Include="Assets\Scripts\Camera_Change.cs" />
+     <Compile Include="Assets\Scripts\ChangeSkyBox.cs" />
      <Compile Include="Assets\Scripts\Countdown.cs" />
      <Compile Include="Assets\Scripts\EnableDisableAICars.cs" />
+     <Compile Include="Assets\Scripts\GlobalPoints.cs" />
      <Compile Include="Assets\Scripts\HalfTrigger.cs" />
      <Compile Include="Assets\Scripts\LapComplete.cs" />
      <Compile Include="Assets\Scripts\LapTimeManager.cs" />

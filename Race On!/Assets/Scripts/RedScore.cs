@@ -5,8 +5,13 @@ using UnityEngine;
 public class RedScore : MonoBehaviour
 {
 
-    void OnCollisionEnter(){
-        ModeScore.CurrentScore = ModeScore.CurrentScore + 100;
-        gameObject.SetActive(false);
-    }
+     void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag=="Player"){
+            
+
+            ModeScore.CurrentScore = ModeScore.CurrentScore + 100;
+            gameObject.SetActive(false);
+            
+        }
+     }
 }

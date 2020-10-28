@@ -13,8 +13,8 @@ public class LapComplete : MonoBehaviour
     public GameObject minuteObject;
     public float RawTime;
 
-    public void OnTriggerEnter() {
-
+    public void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag=="Player"){
         RawTime = PlayerPrefs.GetFloat("RawTime");
         if(LapTimeManager.RawTime<=RawTime){
         milliObject.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
@@ -38,12 +38,14 @@ public class LapComplete : MonoBehaviour
         PlayerPrefs.SetInt("SecSave",LapTimeManager.SecondCount);
         PlayerPrefs.SetFloat("MilliSave",LapTimeManager.MilliCount);
         PlayerPrefs.SetFloat("RawTime",LapTimeManager.RawTime);
+        GlobalPoints.TotalCash = ModeScore.CurrentScore;
 
         LapTimeManager.RawTime = 0;
         LapTimeManager.MilliCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MinuteCount = 0;
 
+    }
     }
 
 
