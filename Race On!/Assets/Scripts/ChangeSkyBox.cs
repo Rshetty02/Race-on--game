@@ -5,18 +5,33 @@ using UnityEngine;
 public class ChangeSkyBox : MonoBehaviour
 {
 
-    public Material skybox1;
+    public Material skyboxday;
+    public Material skyboxnight;
+    public Material skyboxovercast;
+    public Material skyboxevening;
+
+    public int track;
+
     // Start is called before the first frame update
     void Start()
     {
-        RenderSettings.skybox = skybox1;
+        track = start_game_scene.track;
+
+        if(track == 4){
+        RenderSettings.skybox = skyboxevening;
+        }
+        else if(track == 2){
+            RenderSettings.skybox = skyboxnight;;
+        }
+        else if(track == 3){
+            RenderSettings.skybox = skyboxovercast;
+        }
+        else{
+            RenderSettings.skybox  = skyboxday;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     
 }
