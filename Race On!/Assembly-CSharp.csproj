@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerPosition.cs" />
      <Compile Include="Assets\Scripts\RedScore.cs" />
+     <Compile Include="Assets\Scripts\UnityADs.cs" />
      <Compile Include="Assets\Scripts\WaypointTrackerAI.cs" />
      <Compile Include="Assets\start_game_scene.cs" />
      <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
@@ -629,6 +630,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
