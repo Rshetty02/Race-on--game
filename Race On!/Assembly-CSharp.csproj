@@ -36,6 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudienceNetwork\Library\AdHandler.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdSettings.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdUtility.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdView.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AudienceNetworkAds.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\ExtraHints.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\InterstitialAd.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\RewardedVideoAd.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\SdkVersion.cs" />
+     <Compile Include="Assets\AudienceNetwork\Scenes\Banner\AdViewScene.cs" />
+     <Compile Include="Assets\AudienceNetwork\Scenes\BaseScene.cs" />
+     <Compile Include="Assets\AudienceNetwork\Scenes\Interstitial\InterstitialAdScene.cs" />
+     <Compile Include="Assets\AudienceNetwork\Scenes\RewardedVideo\RewardedVideoAdScene.cs" />
+     <Compile Include="Assets\AudienceNetwork\Scenes\Settings\SettingsScene.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
@@ -56,9 +70,11 @@
      <Compile Include="Assets\Scripts\BlueScore.cs" />
      <Compile Include="Assets\Scripts\CameraAngle.cs" />
      <Compile Include="Assets\Scripts\Camera_Change.cs" />
+     <Compile Include="Assets\Scripts\CarBodyChoice.cs" />
      <Compile Include="Assets\Scripts\ChangeSkyBox.cs" />
      <Compile Include="Assets\Scripts\Countdown.cs" />
      <Compile Include="Assets\Scripts\EnableDisableAICars.cs" />
+     <Compile Include="Assets\Scripts\GlobalCarScript.cs" />
      <Compile Include="Assets\Scripts\GlobalPoints.cs" />
      <Compile Include="Assets\Scripts\HalfTrigger.cs" />
      <Compile Include="Assets\Scripts\LapComplete.cs" />
@@ -70,6 +86,7 @@
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerPosition.cs" />
+     <Compile Include="Assets\Scripts\PositionTracking.cs" />
      <Compile Include="Assets\Scripts\RedScore.cs" />
      <Compile Include="Assets\Scripts\UnityADs.cs" />
      <Compile Include="Assets\Scripts\WaypointTrackerAI.cs" />
@@ -613,8 +630,14 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -630,12 +653,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-        <HintPath>C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

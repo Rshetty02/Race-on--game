@@ -13,7 +13,7 @@ public class RedScore : MonoBehaviour
         if(other.gameObject.tag=="Player"){
             
 
-            ModeScore.CurrentScore = ModeScore.CurrentScore + 10;
+            ModeScore.CurrentScore = ModeScore.CurrentScore + 100;
             gameObject.SetActive(false);
             
         }

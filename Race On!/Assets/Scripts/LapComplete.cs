@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class LapComplete : MonoBehaviour
 {
     
@@ -14,7 +15,10 @@ public class LapComplete : MonoBehaviour
 
     public GameObject minuteObject;
     public float RawTime;
-
+    UnityADs iad = new UnityADs();
+    private void Start() {
+        
+    }
     public void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag=="Player"){
         RawTime = PlayerPrefs.GetFloat("RawTime");
@@ -48,6 +52,9 @@ public class LapComplete : MonoBehaviour
         //CashValue  = GlobalPoints.TotalCash;
         //GlobalPoints.TotalCash = ModeScore.CurrentScore + GlobalPoints.TotalCash;
 
+        
+        
+
         //PlayerPrefs.SetInt("HighScore",CashValue);
         //Debug.Log(PlayerPrefs.GetInt("HighScore"));
         LapTimeManager.RawTime = 0;
@@ -55,6 +62,9 @@ public class LapComplete : MonoBehaviour
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MinuteCount = 0;
 
+        iad.DisplayInterstitialAD();
+        
+        SceneManager.LoadScene("trackselect");
     }
     }
 
