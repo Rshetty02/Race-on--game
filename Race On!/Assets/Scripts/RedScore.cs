@@ -5,6 +5,10 @@ using UnityEngine;
 public class RedScore : MonoBehaviour
 {
 
+    void start(){
+
+        ModeScore.CurrentScore = 0;
+    }
      void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag=="Player"){
             

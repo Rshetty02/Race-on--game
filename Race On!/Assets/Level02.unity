@@ -3024,7 +3024,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 112964095}
-        m_MethodName: startgame
+        m_MethodName: trackselect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11312,6 +11312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   milliObject: {fileID: 502467869}
   secondObject: {fileID: 682966495}
+  CashValue: 0
   minuteObject: {fileID: 709338729}
   RawTime: 0
 --- !u!1 &400082391

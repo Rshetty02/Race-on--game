@@ -9,6 +9,8 @@ public class LapComplete : MonoBehaviour
 
     
     public GameObject secondObject;
+    public int HighScore;
+    public int CashValue;
 
     public GameObject minuteObject;
     public float RawTime;
@@ -38,8 +40,16 @@ public class LapComplete : MonoBehaviour
         PlayerPrefs.SetInt("SecSave",LapTimeManager.SecondCount);
         PlayerPrefs.SetFloat("MilliSave",LapTimeManager.MilliCount);
         PlayerPrefs.SetFloat("RawTime",LapTimeManager.RawTime);
-        GlobalPoints.TotalCash = ModeScore.CurrentScore;
+        //GlobalPoints.TotalCash = ModeScore.CurrentScore;
 
+
+        HighScore = PlayerPrefs.GetInt("HighScore") + ModeScore.CurrentScore;
+        PlayerPrefs.SetInt("HighScore",HighScore);
+        //CashValue  = GlobalPoints.TotalCash;
+        //GlobalPoints.TotalCash = ModeScore.CurrentScore + GlobalPoints.TotalCash;
+
+        //PlayerPrefs.SetInt("HighScore",CashValue);
+        //Debug.Log(PlayerPrefs.GetInt("HighScore"));
         LapTimeManager.RawTime = 0;
         LapTimeManager.MilliCount = 0;
         LapTimeManager.SecondCount = 0;

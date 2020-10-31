@@ -5,20 +5,21 @@ using UnityEngine.UI;
 public class GlobalPoints : MonoBehaviour
 {
     public int CashValue;
-    public static int TotalCash;
+    
+
+    public int CurrScore;
+
+    public int HighScore;
 
     public GameObject CashDisplay;
 
     // Start is called before the first frame update
-    
+     void Start() {
 
-    // Update is called once per frame
-    void Update()
-    {
-        CashValue = TotalCash;
-        CashDisplay.GetComponent<Text>().text = "Total Points :" + TotalCash;
+        HighScore = PlayerPrefs.GetInt("HighScore");
 
-        
-        
+        CashDisplay.GetComponent<Text>().text = "Total Points :" + HighScore.ToString();
     }
+
+    
 }

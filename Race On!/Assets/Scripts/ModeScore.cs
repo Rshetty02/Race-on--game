@@ -10,24 +10,14 @@ public class ModeScore : MonoBehaviour
     public GameObject ScoreUI;
     public static int CurrentScore;
     public int InternalScore;
+    public int HighScore;
 
     public GameObject ScoreValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        ModeSelection = ModeSelect.RaceMode;
-
-        if(ModeSelection == 1){
-            RaceUI.SetActive(false);
-            ScoreUI.SetActive(true);
-
-
-        }
         
-
-
-
 
     }
 
@@ -37,6 +27,9 @@ public class ModeScore : MonoBehaviour
         InternalScore = CurrentScore;
         
             ScoreValue.GetComponent<Text>().text = "" + InternalScore;
+            //HighScore = PlayerPrefs.GetInt("HighScore") + InternalScore;
+            //PlayerPrefs.SetInt("HighScore",HighScore);
+            //GlobalPoints.TotalCash = ModeScore.CurrentScore + GlobalPoints.TotalCash;
         
     }
 }

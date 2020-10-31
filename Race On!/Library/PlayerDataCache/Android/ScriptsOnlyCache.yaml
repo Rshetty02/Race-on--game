@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - BlueScore
     - CameraAngle
     - Camera_Change
+    - ChangeSkyBox
     - Countdown
     - EnableDisableAICars
     - FixedJoystick
@@ -93,11 +94,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 12520}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,6 +191,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12126}
     - Class: 114
+      Script: {instanceID: 12190}
+    - Class: 114
       Script: {instanceID: 12248}
     - Class: 114
       Script: {instanceID: 12292}
@@ -200,39 +203,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12448}
+      Script: {instanceID: 12450}
     - Class: 114
-      Script: {instanceID: 12466}
+      Script: {instanceID: 12468}
     - Class: 114
-      Script: {instanceID: 12520}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 12618}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12702}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12814}
+      Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13052}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 13200}
     - Class: 114
-      Script: {instanceID: 13224}
+      Script: {instanceID: 13226}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 13432}
+      Script: {instanceID: 13434}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 19512}
+      Script: {instanceID: 20870}
     - Class: 114
-      Script: {instanceID: 19994}
+      Script: {instanceID: 20912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -319,13 +322,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 12446}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 31288}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 71870}
+      Script: {instanceID: 14302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -372,15 +375,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13346}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 31288}
+      Script: {instanceID: 14302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,7 +481,7 @@ ScriptsOnlyBuild:
     className: TiltShift
   - hash:
       serializedVersion: 2
-      Hash: 65416e0a07220aabe25cce4bdbf9476f
+      Hash: 47979bcf4a714a0a2e0d62f2900e746d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LapComplete
@@ -892,7 +895,7 @@ ScriptsOnlyBuild:
     className: CameraSwitch
   - hash:
       serializedVersion: 2
-      Hash: b6219a9b679532226eadcf7e87223c62
+      Hash: caec752543cc475803e6485ca0e1e775
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChangeSkyBox
@@ -1082,6 +1085,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.ImageEffects
     className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: d3e75b0369f37751a8e7dd159c3647fe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GlobalPoints
   - hash:
       serializedVersion: 2
       Hash: 28b13779be8f871ef41f6a3c44f66a99
@@ -1652,12 +1661,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 6d03380ef99bc468a775c76b7ae6e8cc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GlobalPoints
   platform: 13
   scenePathNames:
   - Assets/Main Menu.unity
