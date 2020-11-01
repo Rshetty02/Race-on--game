@@ -12,7 +12,7 @@ public class UnityADs : MonoBehaviour , IUnityAdsListener
 
     string myPlacementId = "rewardedVideo";
 
-    bool GameMode = true;
+    bool GameMode = false;//testmode
     // Start is called before the first frame update
     void Start()
     {
