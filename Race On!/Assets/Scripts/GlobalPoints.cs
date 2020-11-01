@@ -14,7 +14,7 @@ public class GlobalPoints : MonoBehaviour
     public GameObject CashDisplay;
 
     // Start is called before the first frame update
-     void Start() {
+     void Update() {
 
         HighScore = PlayerPrefs.GetInt("HighScore");
 
