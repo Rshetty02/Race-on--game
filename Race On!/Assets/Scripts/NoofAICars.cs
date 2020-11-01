@@ -14,7 +14,7 @@ public class NoofAICars : MonoBehaviour
     // Start is called before the first frame update
     public void OneAICar(){
 
-        //NoOfAICarsvar = 3;
+        NoOfAICarsvar = 1;
         TrackSelect.SetActive(true);
     }
 

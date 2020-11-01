@@ -72,7 +72,20 @@ public class EnableDisableAICars : MonoBehaviour
             AICar11.SetActive(true);
         }
 
-        else if(NoofAICars.NoOfAICarsvar ==0){
+        else if(NoofAICars.NoOfAICarsvar ==1){
+            AICar1.SetActive(true);
+            AICar2.SetActive(false);
+            AICar3.SetActive(false);
+            AICar4.SetActive(false);
+            AICar5.SetActive(false);
+            AICar6.SetActive(false);
+            AICar7.SetActive(false);
+            AICar8.SetActive(false);
+            AICar9.SetActive(false);
+            AICar10.SetActive(false);
+            AICar11.SetActive(false);
+        }
+        else{
             AICar1.SetActive(true);
             AICar2.SetActive(false);
             AICar3.SetActive(false);

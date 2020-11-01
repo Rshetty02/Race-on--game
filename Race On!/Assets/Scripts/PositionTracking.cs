@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PositionTracking : MonoBehaviour
 {
-
+    int NoOfAICars;
     public GameObject PlayerCar;
 
     public GameObject AICar1;
@@ -34,9 +34,12 @@ public class PositionTracking : MonoBehaviour
     public float AI9;
     public float AI10;
     public float AI11;
+
+    public float[] arr;
     
     
-    public float[] arr = new float[12];
+    //public float[] arr = new float[12];
+    //public float[] arr = new float[12];
 
     public int pos;
 
@@ -44,23 +47,43 @@ public class PositionTracking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         
     }
 
     // Update is called once per frame
     void Update()
-    {   zp = PlayerCar.transform.position.z;
+    {   
+        NoOfAICars = NoofAICars.NoOfAICarsvar;
+        //arr = new float[NoOfAICars];
+        /*
+        arr = new float[12];
+        arr[0] = PlayerCar.transform.position.z;
+        arr[1] =  AICar1.transform.position.z;
+        arr[2] =  AICar2.transform.position.z;
+        arr[3] =  AICar3.transform.position.z;
+        arr[4] =  AICar4.transform.position.z;
+        arr[5] =  AICar5.transform.position.z;
+        arr[6] =  AICar6.transform.position.z;
+        arr[7]=  AICar7.transform.position.z;
+        arr[8] =  AICar8.transform.position.z;
+        arr[9]  =  AICar9.transform.position.z;
+        arr[10] =  AICar10.transform.position.z;
+        arr[11]  =  AICar11.transform.position.z;
+        */
+        arr = new float[12];
+        zp = PlayerCar.transform.position.z;
         AI1 =  AICar1.transform.position.z;
         AI2 =  AICar2.transform.position.z;
         AI3 =  AICar3.transform.position.z;
         AI4 =  AICar4.transform.position.z;
         AI5 =  AICar5.transform.position.z;
         AI6 =  AICar6.transform.position.z;
-        AI7 =  AICar7.transform.position.z;
+        AI7=  AICar7.transform.position.z;
         AI8 =  AICar8.transform.position.z;
-        AI9 =  AICar9.transform.position.z;
+        AI9  =  AICar9.transform.position.z;
         AI10 =  AICar10.transform.position.z;
-        AI11 =  AICar11.transform.position.z;
+        AI11  =  AICar11.transform.position.z;
+        
         
 
         arr[0] = zp;
@@ -75,11 +98,11 @@ public class PositionTracking : MonoBehaviour
         arr[9] = AI9;
         arr[10] = AI10;
         arr[11] = AI11;
+       
         
-        
-        
+        /*
 
-        for (int i = 0; i <= arr.Length - 1; i++)  
+        for (int i = 0; i <= arr.Length -1 ; i++)  
         {  
             for (int j = 0; j <= arr.Length - 2; j++)  
             {  
@@ -92,15 +115,56 @@ public class PositionTracking : MonoBehaviour
             }  
         }
 
-        for (int i=0; i<=arr.Length -1;i++ ){
+         for (int i = 0; i < arr.Length  ; i++)  
+        {  
+            for (int j = i +1; j < arr.Length; j++)  
+            {  
+                if (arr[i] < arr[j])  
+                {  
+                    float temp = arr[j];  
+                    arr[j] = arr[j + 1];  
+                    arr[j + 1] = temp;  
+                }  
+            }  
+        }
+
+        for (int i=0; i<arr.Length ;i++ ){
             if(arr[i] == zp){
 
                 pos = i +1;
 
             }
-        }
-        Score.GetComponent<Text>().text = "" + pos;
+        */
 
+         for (int i = 0; i <= arr.Length -1 ; i++)  
+        {  
+            for (int j = 0; j <= arr.Length - 2; j++)  
+            {  
+                if (arr[j] < arr[j + 1])  
+                {  
+                    float temp = arr[j];  
+                    arr[j] = arr[j + 1];  
+                    arr[j + 1] = temp;  
+                }  
+            }  
+        }
+
+        for (int i=0; i<=arr.Length -1;i++ ){
+            if(arr[i] == zp){
+
+                pos = i+1;
+
+            }
+        }
+
+        
+        
+        if(NoOfAICars < pos){
+            Score.GetComponent<Text>().text = "" + (NoOfAICars +1);
+        }
+        else{
+        Score.GetComponent<Text>().text = "" + pos;
+        }
         }
 
         
