@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LapComplete : MonoBehaviour
 {
-    
+    public int bonus;
+    public GameObject Position;
+    public int pos;
     public GameObject milliObject;
 
     
@@ -61,10 +64,40 @@ public class LapComplete : MonoBehaviour
         LapTimeManager.MilliCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MinuteCount = 0;
-
+        
         iad.DisplayInterstitialAD();
         
+        
+        pos = PositionTracking.GloabalPlayerPos;
+
+        if(pos == 1 && NoofAICars.NoOfAICarsvar == 1){
+            bonus = PlayerPrefs.GetInt("HighScore") + 100;
+            PlayerPrefs.SetInt("HighScore",bonus);
+            SceneManager.LoadScene("You Win!");
+        }
+        else if(pos == 1 && NoofAICars.NoOfAICarsvar == 3){
+            bonus = PlayerPrefs.GetInt("HighScore") + 300;
+            PlayerPrefs.SetInt("HighScore",bonus);
+            SceneManager.LoadScene("You Win!");
+        }
+        else if(pos == 1 && NoofAICars.NoOfAICarsvar == 7){
+            bonus = PlayerPrefs.GetInt("HighScore") + 400;
+            PlayerPrefs.SetInt("HighScore",bonus);
+            SceneManager.LoadScene("You Win!");
+        }
+        else if(pos == 1 && NoofAICars.NoOfAICarsvar == 9){
+            bonus = PlayerPrefs.GetInt("HighScore") + 500;
+            PlayerPrefs.SetInt("HighScore",bonus);
+            SceneManager.LoadScene("You Win!");
+        }
+        else if(pos == 1 && NoofAICars.NoOfAICarsvar == 11){
+            bonus = PlayerPrefs.GetInt("HighScore") + 500;
+            PlayerPrefs.SetInt("HighScore",bonus);
+            SceneManager.LoadScene("You Win!");
+        }
+        else{
         SceneManager.LoadScene("trackselect");
+        }
     }
     }
 

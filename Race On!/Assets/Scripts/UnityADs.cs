@@ -8,6 +8,8 @@ public class UnityADs : MonoBehaviour , IUnityAdsListener
 
     string GooglePlayId = "3884733";
 
+    int bonus;
+
     string myPlacementId = "rewardedVideo";
 
     bool GameMode = true;
@@ -33,6 +35,9 @@ public class UnityADs : MonoBehaviour , IUnityAdsListener
         if (showResult == ShowResult.Finished) {
             // Reward the user for watching the ad to completion.
             Debug.LogWarning("You Get a reward!");
+            bonus = PlayerPrefs.GetInt("HighScore") + 500;
+            PlayerPrefs.SetInt("HighScore",bonus);
+
         } else if (showResult == ShowResult.Skipped) {
             // Do not reward the user for skipping the ad.
             Debug.LogWarning("You don't get a reward!");

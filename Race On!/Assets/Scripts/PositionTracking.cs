@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PositionTracking : MonoBehaviour
 {
+
+    public static int GloabalPlayerPos;
     int NoOfAICars;
     public GameObject PlayerCar;
 
@@ -161,9 +163,11 @@ public class PositionTracking : MonoBehaviour
         
         if(NoOfAICars < pos){
             Score.GetComponent<Text>().text = "" + (NoOfAICars +1);
+            GloabalPlayerPos = (NoOfAICars +1); 
         }
         else{
         Score.GetComponent<Text>().text = "" + pos;
+            GloabalPlayerPos = pos;
         }
         }
 
