@@ -35,7 +35,7 @@ public class UnityADs : MonoBehaviour , IUnityAdsListener
         if (showResult == ShowResult.Finished) {
             // Reward the user for watching the ad to completion.
             Debug.LogWarning("You Get a reward!");
-            bonus = PlayerPrefs.GetInt("HighScore") + 500;
+            bonus = PlayerPrefs.GetInt("HighScore") + 200;
             PlayerPrefs.SetInt("HighScore",bonus);
 
         } else if (showResult == ShowResult.Skipped) {

@@ -247,9 +247,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13730}
     - Class: 114
-      Script: {instanceID: 26790}
+      Script: {instanceID: 29804}
     - Class: 114
-      Script: {instanceID: 27108}
+      Script: {instanceID: 29822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1845,4 +1845,4 @@ ScriptsOnlyBuild:
   - Assets/trackselect.unity
   - Assets/End Credits.unity
   - Assets/You Win!.unity
-  playerPath: C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Testfinal.apk
+  playerPath: C:/Users/Rahul/.vscode/Documents/GitHub/Race-on--game/Race On!/Final_Version_Race_On_3d.apk
